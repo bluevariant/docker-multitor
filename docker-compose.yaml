@@ -1,0 +1,9 @@
+version: '3.6'
+services:
+  multitor:
+    image: "multitor"
+    restart: always
+    ports:
+        - "80:80"
+    environment:
+        TOR_INSTANCES: 10
